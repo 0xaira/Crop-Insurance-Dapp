@@ -1,9 +1,17 @@
-# Blockchain Based Crop-Insurance-Dapp
-
 **Problem**
 
 - Delay in settling of crop insurance claims under the Pradhan Mantri Fasal Bima Yojana 
 - Rejection of crop insurance claims under the Pradhan Mantri Fasal Bima Yojana 
+<div align="center">
+
+![](Readme/Aspose.Words.3de8c373-6f96-47df-943d-9be83daaa8a8.001.jpeg)
+</div>
+
+
+
+
+
+
 
 **Introduction**
 
@@ -16,6 +24,20 @@ Indeed, a smart contract can be written to register farmers interested in purcha
 The main idea is to develop a continuous monitoring and processing collaborative insurance system by (i) managing the collected money of the insurers using a smart contract to eliminate the need to trust the involved insurance parties, (ii) implementing the insurance policies and the claims as smart contracts, and (iii) deploying the contracts in a distributed platform using blockchain for both automating the execution of the agreement between the insurer and the insured as well as (iv) recording all the insurance transactions in a transparent and tamper-proof manner.
 
 The reasons behind using the blockchain technology are: to guarantee that the collaborative insurance model is followed by each participant, to improve the insurance transaction transparency, to guarantee the non-repudiation principle conformity among several untrustworthy collaborative entities, to automate and speed up business processes in the insurance industry from the insured registration till the claim handling, and to reduce administrative and operational costs by eliminating manual interactions across insurance system entities.
+<div align="center">
+
+![](Readme/Aspose.Words.3de8c373-6f96-47df-943d-9be83daaa8a8.002.png)
+</div>
+
+
+
+
+
+
+
+
+
+
 
 **Application and Working**
 
@@ -27,7 +49,33 @@ To know about the application and working of our project we first need to unders
 
 **Oracles:** Oracles are used to gather information from the real-world and invoke automatically the smart contract pertaining to the claim. For instance, in crop insurance, an oracle can periodically check climate condition, then a smart contract can read these external data, and trigger a payment to refund the insured farmers in case of a local calamities. Insure chain is another interesting proposal that is based on a smart contract which includes the rules associated with setting the premium and the settlement verification. The verification of reimbursement conditions is based on the services of an oracle whose task is to certify the corresponding weather data and ensuring its authenticity. Using oracles can speed up claim handling and reduce manual administrative mistakes.
 
-System Model for Crop Insurance System                                                                                      
+<div align="center">
+
+![](Readme/Aspose.Words.3de8c373-6f96-47df-943d-9be83daaa8a8.003.jpeg)
+</div>
+
+
+
+
+
+<div align="center">
+
+![](Readme/Aspose.Words.3de8c373-6f96-47df-943d-9be83daaa8a8.004.png)
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+**System Model for Crop Insurance System**                                                                                      
 
 \1. **Insured (Farmers):** This entity is interested in purchasing policies offered by an insurer in order to be covered (depending on the type of insurance). In case of a claim request, the insured can receive refunds from the insurer (subject to verification).                                                        
 
@@ -37,7 +85,28 @@ System Model for Crop Insurance System
 
 \4. **Auditor**: This entity investigates and audits the insurance transactions stored on the blockchain to settle some legal dispute between the insurer and insured. The blockchain enabled distributed platform facilitates the auditor’s task, thanks to the salient features of blockchain, i.e., transparency, tamper-proof, and the non-repudiation.
 
-Blockchain-Based Framework for Crop Insurance
+<div align="center">
+
+![](Readme/Aspose.Words.3de8c373-6f96-47df-943d-9be83daaa8a8.005.png)
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Blockchain-Based Framework for Crop Insurance**
 
 **Proposed Smart Contracts**: In order to automate the execution of the agreement between the insurer (Private Insurance Companies with Agriculture Insurance Company under PMFBY) and the insured (Farmers), three smart contracts are proposed: InsurancePool, InsurancePolicy, and Claim.
 
@@ -49,11 +118,35 @@ The smart contract’s functions are executed when a set of predefined condition
 
 **Claim smart contract*:*** It is created by an InsurancePolicy smart contract and hosted on the blockchain. The Claim smart contract is designed to automate the claim processing, verification, and payment. This smart contract defines a set of functions, authorize function that enables the insurer to update the status of the claim from “Created” to “Open” or to “Rejected”. TriggerPayment function that is automatically invoked in order to refund the claimed amount and ask for closing the claim, closeClaim function that is automatically invoked once the insured is refunded by updating the claim’s status to “Closed”, and cancelClaim function that enables the insured to cancel a claim, then the claim status is updated to “Canceled” and the claim is canceled.
 
+
+
+
+<div align="center">
+
+![](Readme/Aspose.Words.3de8c373-6f96-47df-943d-9be83daaa8a8.006.png)
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 After the smart contract’s functions are executed, we can easily -                                                                  
 
 - Track when a crop insurance claim is settled                                                                                                      
 - Track when the insurance company disburses the insurance claim                                                                        
-- Track when the settlement amount is credited to the farmers bank account.
+- ![](Aspose.Words.3de8c373-6f96-47df-943d-9be83daaa8a8.007.png)Track when the settlement amount is credited to the farmers bank account.
+
+
+
+
+
 
 **Development Phases of a Smart Contract**
 
@@ -68,6 +161,14 @@ After the smart contract’s functions are executed, we can easily -
 **Deployment.** Now it’s time to deploy the smart contract to the Ethereum blockchain so that everyone can use it. There are specific tools to speed up deployment, but in general, developers have to submit contract code to the blockchain where the transaction will wait to be mined. After it’s mined, the contract is considered deployed.
 
 **Support.** An insurance company that operates blockchain technology should have their own or outsourced resources to maintain the infrastructure of their smart contracts.
+<div align="center">
+
+![](Readme/Aspose.Words.3de8c373-6f96-47df-943d-9be83daaa8a8.008.png)
+</div>
+
+
+
+
 
 **Smart Contract Life Cycle Phases**
 
@@ -78,6 +179,19 @@ After the smart contract’s functions are executed, we can easily -
 **Execution.** When the smart contract executes, it results in new transactions that are once again stored in the distributed ledger. These transactions are then validated by the consensus protocol.
 
 **Finalization.** A smart contract is considered finalized after assets have been unfrozen and all transactions have been confirmed.
+
+<div align="center">
+
+![](Readme/Aspose.Words.3de8c373-6f96-47df-943d-9be83daaa8a8.009.png)
+</div>
+
+
+
+
+
+
+
+
 
 **Features** 
 
@@ -117,7 +231,17 @@ After the smart contract’s functions are executed, we can easily -
 
 In the next five years, we see smart contracts in the insurance sector being developed in relation to short term risks where there are clear parameters as to payment, the potential for disputes is low and the claims management process is uncomplicated or pre-determined.
 
+Smart Contracts can not only transform the Crop Insurance System but also it can transform the Agriculture System too. Smart contracts with Blockchain and Internet of Things combinedly can solve problems by providing a distributed network of connected sellers and buyers, ensure traceability of agricultural products from root to retail, ensure temper proof data acquisition from storage, field level, and while distributing, remove intermediate processors and controlling market prices, gaining more control with automation of the process while removing intermediate third-party processors. These were few more added features of Smart Contracts to enhance the life of Indian Farmers.
+
 Perhaps the main obstacle to smart contracts becoming the norm in the insurance market is that decision makers may not commit sufficient human and financial capital to their development. As smart contracts represent more of a revolution than an evolution in the way business is transacted, they will require significant strategic long-term resources committed to their development.
+
+<div align="center">
+
+![](Readme/Aspose.Words.3de8c373-6f96-47df-943d-9be83daaa8a8.011.png)
+</div>
+
+
+
 
 
 
